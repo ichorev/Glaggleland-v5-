@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Park Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Theme Park Game</h1>
+        </header>
+        <main>
+            <div class="controls">
+                <button onclick="park.addRide('ferrisWheel')">Add Ferris Wheel</button>
+                <button onclick="park.addRide('carousel')">Add Carousel</button>
+                <button onclick="park.addRide('rollerCoaster')">Add Roller Coaster</button>
+            </div>
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            <div id="gameStatus">Score: 0</div>
+        </main>
+        <footer>
+            <p>Enjoy your visit to the theme park!</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
